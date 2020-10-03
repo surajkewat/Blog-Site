@@ -96,18 +96,6 @@
       <!-- Sidebar Widgets Column -->
       <div class="col-md-4">
 
-        {{-- <!-- Search Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Search</h5>
-          <div class="card-body">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-append">
-                <button class="btn btn-primary" type="button">Go!</button>
-              </span>
-            </div>
-          </div>
-        </div> --}}
 
         <!-- Categories Widget -->
         <div class="card my-4">
@@ -159,15 +147,6 @@
 
   </div>
   <!-- /.container -->
-
-  <!-- Footer -->
-  {{-- <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white"> Blog Website 2020</p>
-    </div>
-    <!-- /.container -->
-  </footer> --}}
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

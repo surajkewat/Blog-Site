@@ -38,6 +38,8 @@ class PostsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+    //store add the blog data to the table posts
     public function store(Request $request)
     {
         // dd($request->all(),$request->title);
@@ -67,6 +69,8 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    //returns Blog data of blog with id to Blog_view page
     public function show($id)
     {
         $post = Post::find($id);
@@ -81,6 +85,8 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    //returns Blog data of blog with id to edit page
     public function edit($id)
     {
         $post = Post::find($id);
@@ -94,6 +100,8 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    //updates blog data in the posts table 
     public function update(Request $request, $id)
     {
         $post = Post::find($id);
@@ -118,6 +126,8 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    //deletes the blog data row with the id from table posts
     public function destroy($id)
     {
         $post = Post::find($id);

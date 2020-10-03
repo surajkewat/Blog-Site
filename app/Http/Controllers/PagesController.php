@@ -13,6 +13,8 @@ class PagesController extends Controller
     {
         $this->middleware('auth');
     }
+    
+    //method returns all blogs and the users who pusblished those posts
     public function index()
     {
         $posts = Post::orderBy('created_at', 'desc')->paginate(2);
@@ -27,16 +29,20 @@ class PagesController extends Controller
     {
         return view('pages.create');
     }
+
+    //method returns all blogs of the current user 
     public function view()
     {   
         $id = Auth::id();
         $posts = Post::where('uid',$id)->orderBy('created_at', 'desc')->paginate(2);
         return view('pages.view')->with('posts',$posts);
     }
-    public function about()
-    {
-        return view('pages.about');
-    }
+    // public function about()
+    // {
+    //     return view('pages.about');
+    // }
+
+    //category returns blogs for specific category request to index view
     public function category($id)
     {
         $posts = Post::where('cat',$id)->paginate(2);
@@ -47,6 +53,8 @@ class PagesController extends Controller
         }
         return view('pages.index')->with('posts',$posts);
     }
+
+    //category2 returns blogs for specific category request to View page
     public function category2($id)
     {
         $posts = Post::where('cat',$id)->paginate(2);
