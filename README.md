@@ -1,5 +1,10 @@
 # Screenshots
+
+# Bloges from all users
 ![](images/All_blogs1.png)
+
+![](images/All_blogs2.png)
+
 # Blog View
 ![](images/Blog_view.png)
 
